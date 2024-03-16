@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container_limits {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: white;
+    bottom: 1px;
+}
+
+.wrapper_limits {
+    display: flex;
+    flex-direction: column;
+}
+
+.block {
+    display: flex;
+    height: fit-content;
+}
+
+.block_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.limit {
+    box-sizing: border-box;
+    border: 1px solid rgb(11, 60, 50);
+    width: 356px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 8px;
+}
+
+.number {
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(11, 60, 50);
+    border-right: 1px solid rgb(11, 60, 50);
+    border-top: 1px solid rgb(11, 60, 50);
+    width: 92px;
+}
+
+.limit span {
+    color: rgb(11, 60, 50);
+    font-family: Ubuntu;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+#medical_emergency_24hrs {
+    height: 43.5px;
+}
+
+#outpatient_care {
+    height: 32px;
+}
+
+.limit_content {
+    box-sizing: border-box;
+    border: 1px solid rgb(11, 60, 50);
+    width: 356px;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    flex-direction: column;
+}
+
+.limit_content span {
+    color: rgb(11, 60, 50);
+    font-family: Ubuntu;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0%;
+    text-align: left;
+    display: block;
+}
+
+#bold {
+    color: rgb(11, 60, 50);
+    font-family: Ubuntu;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+#heal_massage {
+    height: 107px;
+}
+
+.container_limits {
+    display: none;
+}
+
+.number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(11, 60, 50);
+    font-family: Ubuntu;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+@media only screen and (max-width: 800px) {
+    .container_limits {
+        flex-direction: column;
+    }
+}
+

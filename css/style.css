@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    /*overflow: hidden;*/
+}
+
+/* .container {
+    position: absolute;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    zoom: 100%;
+} */
+
+
+/* navigation menu */
+.navbar {
+    height: 92px;
+    flex-shrink: 0;
+    background: #0B3C32;
+    position: relative;
+    display: flex;
+}
+.logo img {
+    position: absolute;
+    width: 270px;
+    padding: 10px;
+    margin-left: 50px;
+    /*height: 75px;*/
+}
+
+.navbar_buttons {
+    position: absolute;
+    list-style-type: none;
+    right: 80px;
+}
+
+.navbar_button {
+    display: inline-block;
+    width: 128px;
+    height: 92px;
+    line-height: 92px;
+    text-align: center;
+    align-items: center;
+}
+
+
+.navbar_button a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #EACC76;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.mobile_navbar {
+    display: none;
+}
+@media only screen and (max-width: 800px) {
+    .mobile_navbar {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 100vw;
+        height: 40px;
+        background: rgb(11, 60, 50);
+    }
+    .navbar {
+        height: 100vh;
+        width: 120px;
+        /*width: 100vw;*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        flex-shrink: 0;
+        background: #0B3C32;
+        z-index: 10;
+    }
+    .logo img {
+        position: relative;
+        width: 120px;
+        margin: 0;
+        padding: 0;
+    }
+    .logo a {
+        width: 130px;
+        height: 36px;
+    }
+    .logo {
+        width: 130px;
+    }
+
+    .navbar_buttons {
+        list-style-type: none;
+        width: 130px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        right: 0;
+    }
+
+    .navbar_button {
+        display: inline-block;
+        width: 120px;
+        height: 92px;
+        line-height: 92px;
+        text-align: center;
+        align-items: center;
+    }
+
+
+    .navbar_button a {
+        text-decoration: none;
+        font-size: 20px;
+        color: #EACC76;
+        text-align: center;
+        font-family: Ubuntu;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+}

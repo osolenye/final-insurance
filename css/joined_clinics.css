@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+}
+
+.wrapper_container {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    position: relative;
+    /* top: 50px; */
+    /* left: 50px; */
+}
+
+.wrapper > * {
+    /* margin: 5px; */
+}
+
+
+.clinics_container {
+    display: flex;
+    justify-content: center;
+}
+
+.clinics {
+    color: rgb(11, 60, 50);
+    font-family: Ubuntu;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+
+.headers {
+    display: flex;
+    justify-content: center;
+    width: 1168px;
+}
+
+
+.headers p {
+    color: rgb(11, 60, 50);
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: left;
+
+
+    flex-grow: 1;
+    width: 292px;
+}
+
+
+.line {
+    width: 1168px;
+    border: 2px solid rgb(11, 60, 50);
+}
+
+
+.clinic_info {
+    width: 1168px;
+    height: 56px;
+}
+
+#clinic_info_background {
+    background-color: rgb(253, 250, 241);
+}
+
+
+.rules_content {
+    position: relative;
+    margin: auto;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 768px;
+    height: 200px;
+    top: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+    .wrapper_container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .wrapper {
+        position: relative;
+        /* top: 50px; */
+        /* left: 50px; */
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .wrapper > * {
+        /* margin: 5px; */
+    }
+
+
+    .clinics_container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%v;
+    }
+
+    .clinics {
+        color: rgb(11, 60, 50);
+        font-family: Ubuntu;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 37px;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    #headers_top {
+        display: none;
+    }
+
+    .headers {
+        display: flex;
+        justify-content: center;
+        width: 70px;
+        flex-direction: column;
+    }
+
+
+
+    .headers p {
+        color: rgb(11, 60, 50);
+        font-family: Ubuntu;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 0%;
+        text-align: left;
+
+
+        flex-grow: 1;
+        width: 292px;
+    }
+
+
+    .line {
+        width: 100vw;
+        border: 2px solid rgb(11, 60, 50);
+    }
+
+
+    .clinic_info {
+        width: 360px;
+        height: 96px;
+        display: flex;
+        /*justify-content: space-between;*/
+        gap: 60px;
+    }
+
+    #clinic_info_background {
+        background-color: rgb(253, 250, 241);
+    }
+
+
+    .rules_content {
+        position: relative;
+        margin: auto;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 768px;
+        height: 200px;
+        top: 50px;
+    }
+}
